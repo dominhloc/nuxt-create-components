@@ -76,12 +76,11 @@ const props = defineProps({
   },
 });
 
-const emits = defineEmits([""]);
-
 const name = ref("Minh Lộc");
 const username = ref("@minhloc.do");
 
-const closeDialog = () => {
-  emits("closeDalog");
-};
+const emits = defineEmits(["closeDialog"]);
+function closeDialog() {
+  emits("closeDialog");
+}
 </script>

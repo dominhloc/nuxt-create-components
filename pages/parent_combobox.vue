@@ -4,7 +4,7 @@
   <div class="w-full h-screen flex flex-col justify-center items-center">
     <div class="space-y-5">
       <!-- <div class="bg-blue-500">parent {{ count }} </div> -->
-      <Select :data="data" />
+      <Combobox :data="data" />
 
       <!-- v-model:count="count" -->
       <!-- v-model:end_value="end_value" -->

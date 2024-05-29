@@ -21,14 +21,4 @@ const props = defineProps({
   },
 });
 console.log("---> asdasdasd", props.data);
-// const end_value = defineModel("end_value");
-// const count = defineModel("count");
-//
-// function check(item) {
-//   console.log("🚀 ~ check ~ item:", item?.target?.value);
-// }
-// function upcount() {
-//   count.value++;
-//   console.log("jasdhfsdvhfjdsvh");
-// }
 </script>
