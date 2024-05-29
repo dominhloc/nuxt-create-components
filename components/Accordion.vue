@@ -1,7 +1,7 @@
 <!-- Đây là con -->
 
 <template>
-  <div class="w-screen h-screen bg-red-500 flex justify-center items-center">
+  <div class="w-screen h-screen flex justify-center items-center">
     <div class="space-y-3 font-serif text-lg w-72 text-center">
       <button
         @click="toggleDropdown()"
@@ -41,15 +41,4 @@ const toggle = (index) => {
 const isOpen = (index) => {
   return openIndex.value === index;
 };
-//
-// function toggleDropdown() {
-//   this.isOpen = !this.isOpen;
-//   console.log("🚀 ~ toggleDropdown ~ this.isOpen:", this.isOpen);
-// }
-
-// function checkId() {
-//   let x = accordion.value.filter((t) => t.id !== accordion.id); //todo.id = giá trị của id
-//   accordion.value = x;
-//   console.log("🚀 ~ checkId ~ accordion.value:", accordion.id);
-// }
 </script>

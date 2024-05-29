@@ -3,12 +3,7 @@
 <template>
   <div class="w-full h-screen flex flex-col justify-center items-center">
     <div class="space-y-5">
-      <!-- <div class="bg-blue-500">parent {{ count }} </div> -->
       <Accordion :accordion="accordion" />
-
-      <!-- v-model:count="count" -->
-      <!-- v-model:end_value="end_value" -->
-      <!-- <input type="text" name="example" list="exampleList" /> -->
     </div>
   </div>
 </template>
