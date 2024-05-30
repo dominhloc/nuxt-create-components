@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="w-screen h-screen bg-gradient-to-l from-green-700 to-green-400 flex flex-col items-center"
-  >
+  <div>
     <Hovercard :data="data" />
   </div>
 </template>
