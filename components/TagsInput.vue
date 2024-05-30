@@ -10,7 +10,7 @@
         <button v-for="(item, index) in data" :key="index" class="p-1.5">
           <div class="w-fit rounded-lg flex p-1.5 bg-green-400 text-white">
             {{ item.name }}
-            <div class="ml-3">X</div>
+            <button @click.prevent="removeTag(item.id)" class="ml-3">X</button>
           </div>
         </button>
         <input
@@ -52,4 +52,8 @@ function addTags() {
   newtags.value = "";
 }
 //console.log("🚀 ~ addTags ~ data.value:", data.value);
+
+function removeTag(id) {
+  data.value = data.value.filter((tag) => tag.id !== id);
+}
 </script>

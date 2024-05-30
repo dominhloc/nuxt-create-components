@@ -11,7 +11,9 @@
       <div class="flex ml-4 text-sm font-bold font-serif">
         {{ item?.title }}
       </div>
-      <div class="flex flex-row ml-4 text-gray-500 text-sm font-serif">
+      <div
+        class="flex flex-row ml-4 items-center text-gray-500 text-sm font-serif"
+      >
         {{ item?.content }}
         <div class="flex-auto flex justify-end items-center">
           <input
