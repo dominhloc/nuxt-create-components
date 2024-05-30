@@ -33,10 +33,10 @@ const props = defineProps({
 });
 
 const data = ref([
-  { name: "Apple" },
-  { name: "Banana" },
-  { name: "Orange" },
-  { name: "Lemon" },
+  { id: 1, name: "Apple" },
+  { id: 2, name: "Banana" },
+  { id: 3, name: "Orange" },
+  { id: 4, name: "Lemon" },
 ]);
 
 const newtags = ref("");
@@ -44,11 +44,12 @@ const newtags = ref("");
 function addTags() {
   console.log("🚀 ~ addTags ~ addTags:", addTags);
   let newTags = data.value.length + 1;
+  console.log("🚀 ~ addTags ~ newTags:", newTags);
   data.value.push({
     id: newTags,
     name: newtags.value,
   });
   newtags.value = "";
 }
-console.log("🚀 ~ addTags ~ data.value:", data.value);
+//console.log("🚀 ~ addTags ~ data.value:", data.value);
 </script>
