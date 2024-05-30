@@ -1,0 +1,46 @@
+<template>
+  <div
+    class="h-screen w-screen bg-gradient-to-l from-blue-600 to-blue-400 flex-col flex justify-center items-center space-y-3"
+  >
+    <div
+      class="space-x-7 bg-sky-500 w-3/5 flex justify-center rounded-lg text-white"
+    >
+      <button
+        v-for="(tab, index) in tabs"
+        :key="index"
+        class="hover:bg-sky-300 w-24 h-10 rounded-lg"
+        :class="{
+          'bg-white text-blue-500 border-blue-200 border-2':
+            selectedIndex === index,
+        }"
+        @click="selectTab(index)"
+      >
+        {{ tab.title }}
+      </button>
+    </div>
+    <div class="p-5 w-3/5 bg-white rounded-lg space-y-7">
+      <button
+        v-for="(content, index) in tabs[selectedIndex].contents"
+        :key="index"
+        class="space-y-1.5 w-full hover:bg-sky-100 rounded-xl h-22 p-2 text-left"
+      >
+        <p class="font-semibold">{{ content.content }}</p>
+        <p class="text-xs text-slate-500">{{ content.comments }}</p>
+      </button>
+    </div>
+  </div>
+</template>
+
+<script setup>
+const props = defineProps({
+  tabs: {
+    type: Array,
+    required: true,
+  },
+});
+const selectedIndex = ref(0);
+
+function selectTab(index) {
+  selectedIndex.value = index;
+}
+</script>
