@@ -4,7 +4,7 @@
   >
     <div class="text-white text-3xl mb-16">ScrollArea</div>
     <div
-      class="w-80 h-72 overflow-y-scroll border border-gray-300 p-4 bg-white rounded-md"
+      class="w-64 h-72 overflow-y-scroll border border-gray-300 p-4 bg-white rounded-md"
     >
       <div class="grid grid-cols-1 gap-4">
         <div
