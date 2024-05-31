@@ -1,59 +1,52 @@
 <template>
   <div
-    class="w-full h-screen bg-gradient-to-l from-green-700 to-green-400 flex flex-col items-center"
+    class="w-full h-screen bg-gradient-to-l from-green-700 to-green-400 flex flex-col justify-center items-center"
   >
-    Tags Input
-    <div
-      class="bg-white h-fit w-2/3 p-2 flex-row flex justify-center mt-28 rounded-lg"
-    >
-      <form @submit.prevent="addTags()">
-        <button v-for="(item, index) in data" :key="index" class="p-1.5">
-          <div class="w-fit rounded-lg flex p-1.5 bg-green-400 text-white">
-            {{ item.name }}
-            <button @click.prevent="removeTag(item.id)" class="ml-3">X</button>
-          </div>
+    <h1 class="text-white text-2xl mt-4">Tags Input</h1>
+    <div class="bg-white w-96 p-1 mt-8 flex flex-wrap space-x-3 rounded-lg">
+      <div
+        v-for="item in fruit"
+        :key="item.id"
+        class="flex justify-center items-center space-x-1 bg-green-500 p-1 rounded-md text-white h-fit w-fit ml-3 mt-1.5 mb-1.5"
+      >
+        <span>{{ item.name }}</span>
+        <button
+          @click="removeFruit(item.id)"
+          class="h-5 flex justify-center items-center rounded-md hover:bg-green-300 w-5"
+        >
+          X
         </button>
-        <input
-          class="bg-slate-200 ml-1.5 w-28 p-1.5 rounded-lg"
-          v-model="newtags"
-          required
-          placeholder="Fruits..."
-        />
-      </form>
+      </div>
+      <input
+        v-model="newFruit"
+        @keyup.enter="addFruit"
+        placeholder="Fruits..."
+        class="mt-2 ml-3 w-24 mb-1.5 p-1 rounded-md"
+      />
     </div>
   </div>
 </template>
 
 <script setup>
 const props = defineProps({
-  data: {
-    type: Array,
-    required: true,
-  },
+  fruit: Array,
 });
 
-const data = ref([
-  { id: 1, name: "Apple" },
-  { id: 2, name: "Banana" },
-  { id: 3, name: "Orange" },
-  { id: 4, name: "Lemon" },
-]);
+const newFruit = ref("");
 
-const newtags = ref("");
-
-function addTags() {
-  console.log("🚀 ~ addTags ~ addTags:", addTags);
-  let newTags = data.value.length + 1;
-  console.log("🚀 ~ addTags ~ newTags:", newTags);
-  data.value.push({
-    id: newTags,
-    name: newtags.value,
-  });
-  newtags.value = "";
+function addFruit() {
+  //console.log("🚀 ~ addFruit ~ addFruit:", addFruit);
+  const nextId = ref(props.fruit.length + 1);
+  props.fruit.push({ id: nextId.value, name: newFruit.value });
+  //console.log("🚀 ~ addFruit ~ nextId.value:", nextId.value);
+  newFruit.value = "";
 }
-//console.log("🚀 ~ addTags ~ data.value:", data.value);
 
-function removeTag(id) {
-  data.value = data.value.filter((tag) => tag.id !== id);
+function removeFruit(id) {
+  const x = props.fruit.findIndex((item) => item.id === id);
+  //console.log("🚀 ~ removeFruit ~ x:", x);
+  if (x !== -1) {
+    props.fruit.splice(x, 1);
+  }
 }
 </script>
