@@ -23,18 +23,12 @@
           </button>
 
           <button
-            @click="closeDialog"
+            @click="closeAlert"
             class="h-9 w-24 border bg-blue-200 rounded-md hover:bg-slate-300 font-serif"
           >
             Cancel
           </button>
         </form>
-        <div
-          v-if="isAction"
-          class="bg-slate-300 text-center rounded-md font-serif"
-        >
-          Deleted Successfully
-        </div>
       </div>
     </div>
   </div>
@@ -47,15 +41,9 @@ const props = defineProps({
   },
 });
 
-const emits = defineEmits(["closeDialog"]);
+const emits = defineEmits(["closeAlert"]);
 
-function closeDialog() {
-  emits("closeDialog");
-}
-
-const isAction = ref(false);
-function handleAction(params) {
-  isAction.value = !isAction.value;
-  console.log("🚀 ~ handleAction ~ isAction.value:", isAction.value);
+function closeAlert() {
+  emits("closeAlert");
 }
 </script>

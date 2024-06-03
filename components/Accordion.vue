@@ -1,7 +1,7 @@
 <!-- Đây là con -->
 
 <template>
-  <div class="w-screen h-screen flex justify-center items-center">
+  <div class="flex justify-center items-center">
     <div class="space-y-3 font-serif text-lg w-72 text-center">
       <button
         @click="toggleDropdown()"
@@ -11,7 +11,7 @@
       >
         <div
           @click="toggle(index)"
-          class="accordion-header cursor-pointer p-4 bg-gray-200"
+          class="accordion-header hover:bg-blue-500 cursor-pointer p-4 bg-blue-400 text-white"
         >
           {{ i?.title }}
         </div>
@@ -30,7 +30,6 @@ const props = defineProps({
     required: true,
   },
 });
-console.log("---> asdasdasd", props.accordion);
 
 const openIndex = ref(null);
 

@@ -3,20 +3,12 @@
 <template>
   <div class="w-full h-screen flex flex-col justify-center items-center">
     <div class="space-y-5">
-      <!-- <div class="bg-blue-500">parent {{ count }} </div> -->
       <Combobox :data="data" />
-
-      <!-- v-model:count="count" -->
-      <!-- v-model:end_value="end_value" -->
-      <!-- <input type="text" name="example" list="exampleList" /> -->
     </div>
   </div>
 </template>
 
 <script setup>
-// const name = ref(undefined);
-// const count = ref(1);
-// const end_value = ref({});
 const data = ref([
   {
     label: "Text A",

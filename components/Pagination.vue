@@ -1,8 +1,6 @@
 <template>
-  <div
-    class="h-screen w-screen bg-gradient-to-l from-green-800 to-green-600 flex justify-center items-center"
-  >
-    <ul class="flex space-x-1">
+  <div class="flex justify-center items-center">
+    <ul class="flex space-x-1 w-fit overflow-auto">
       <!--quay trở về trang 1 khi click -->
       <button
         class="px-4 py-2 rounded-lg text-white font-bold bg-green-700 hover:bg-green-900"

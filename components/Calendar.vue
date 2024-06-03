@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="bg-gradient-to-l from-green-800 to-green-600 h-screen w-screen flex flex-col justify-center items-center"
-  >
+  <div class=" flex flex-col justify-center items-center">
     <div class="container w-fit h-96 bg-slate-50 p-6 space-y-10 rounded-md">
       <div class="flex justify-between items-center mb-4">
         <button

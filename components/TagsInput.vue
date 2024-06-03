@@ -1,9 +1,6 @@
 <template>
-  <div
-    class="w-full h-screen bg-gradient-to-l from-green-700 to-green-400 flex flex-col justify-center items-center"
-  >
-    <h1 class="text-white text-2xl mt-4">Tags Input</h1>
-    <div class="bg-white w-96 p-1 mt-8 flex flex-wrap space-x-3 rounded-lg">
+  <div class="w-full flex justify-center">
+    <div class="bg-white w-96 p-1 flex flex-wrap space-x-3 rounded-lg">
       <div
         v-for="item in fruit"
         :key="item.id"

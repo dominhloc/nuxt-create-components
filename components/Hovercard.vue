@@ -1,11 +1,9 @@
 <template>
-  <div
-    class="w-full h-screen bg-gradient-to-l from-green-700 to-green-400 flex flex-col items-center"
-  >
+  <div class="w-screen h-96 flex-col flex items-center justify-start">
     <button
       v-for="(item, index) in data"
       :key="index"
-      class="rounded-full w-12 h-12 flex justify-center cursor-pointer transition duration-500 ease-in-out items-center bg-black mt-52 text-white"
+      class="rounded-full w-12 h-12 flex justify-center cursor-pointer transition duration-500 ease-in-out items-center bg-black text-white"
       @mouseenter="selectHover(index)"
       @mouseleave="clearHover"
     >

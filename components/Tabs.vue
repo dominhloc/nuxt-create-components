@@ -1,16 +1,14 @@
 <template>
-  <div
-    class="h-screen w-screen bg-gradient-to-l from-blue-600 to-blue-400 flex-col flex justify-center items-center space-y-3"
-  >
+  <div class="w-screen flex-col flex justify-center items-center space-y-3">
     <div
-      class="space-x-7 bg-sky-500 w-3/5 flex justify-center rounded-lg text-white"
+      class="space-x-7 bg-green-800 w-3/5 flex justify-center rounded-lg text-white"
     >
       <button
         v-for="(tab, index) in tabs"
         :key="index"
-        class="hover:bg-sky-300 w-24 h-10 rounded-lg"
+        class="hover:bg-green-600 w-24 h-10 rounded-lg"
         :class="{
-          'bg-white text-blue-500 border-blue-200 border-2':
+          'bg-white text-blue-500 border-green-400 border-2':
             selectedIndex === index,
         }"
         @click="selectTab(index)"

@@ -1,8 +1,7 @@
 <template>
   <div
-    class="h-screen w-screen bg-gradient-to-l from-green-700 to-green-400 flex-col flex justify-center items-center"
+    class="w-screen bg-gradient-to-l from-green-700 to-green-400 flex-col flex justify-center items-center"
   >
-    <div class="text-white text-3xl mb-16">ScrollArea</div>
     <div
       class="w-64 h-72 overflow-y-scroll border border-gray-300 p-4 bg-white rounded-md"
     >
