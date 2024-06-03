@@ -6,9 +6,9 @@
       <button
         v-for="(tab, index) in tabs"
         :key="index"
-        class="hover:bg-green-600 w-24 h-10 rounded-lg"
+        class="hover:bg-slate-200 w-24 h-10 rounded-lg"
         :class="{
-          'bg-white text-blue-500 border-green-400 border-2':
+          'bg-white text-blue-500 font-semibold border-green-400 border-2':
             selectedIndex === index,
         }"
         @click="selectTab(index)"
