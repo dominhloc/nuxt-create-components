@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center">
+  <div class="h-36 flex justify-center items-center">
     <ul class="flex space-x-1 w-fit overflow-auto">
       <!--quay trở về trang 1 khi click -->
       <button

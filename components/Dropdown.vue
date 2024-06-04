@@ -8,7 +8,7 @@ function toggleDropdown() {
 </script>
 
 <template>
-  <div class="h-60 flex flex-col items-center">
+  <div class="h-36 flex flex-col justify-center items-center">
     <div>
       <button
         @click="toggleDropdown()"

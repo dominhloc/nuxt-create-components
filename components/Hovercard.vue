@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen h-96 flex-col flex items-center justify-start">
+  <div class="flex-col flex items-center justify-start">
     <button
       v-for="(item, index) in data"
       :key="index"

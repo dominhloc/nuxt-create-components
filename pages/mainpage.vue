@@ -2,43 +2,43 @@
   <div
     class="flex flex-col justify-center space-y-5 p-6 min-h-screen bg-gradient-to-l from-gray-900 to-gray-900"
   >
-    <div class="text-white text-center">Toggle Switch</div>
+    <div class="text-white font-serif text-2xl text-center">Toggle Switch</div>
     <div
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 h-32 flex justify-center items-center"
     >
       <ToggleSwitch />
     </div>
-    <div class="text-white text-center">Slider</div>
+    <div class="text-white text-center font-serif text-2xl">Slider</div>
     <div
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Slider />
     </div>
-    <div class="text-white text-center">Calendar</div>
+    <div class="text-white text-center font-serif text-2xl">Calendar</div>
     <div
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Calendar />
     </div>
-    <div class="text-white text-center">Scroll</div>
+    <div class="text-white text-center font-serif text-2xl">Scroll</div>
     <div
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
-      <Scroll Scroll :list="list" />
+      <Scroll :list="list" />
     </div>
-    <div class="text-white text-center">Dropdown</div>
+    <div class="text-white text-center font-serif text-2xl">Dropdown</div>
     <div
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Dropdown />
     </div>
-    <div class="text-white text-center">Pagination</div>
+    <div class="text-white text-center font-serif text-2xl">Pagination</div>
     <div
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Pagination />
     </div>
-    <div class="text-white text-center">Accordion</div>
+    <div class="text-white text-center font-serif text-2xl">Accordion</div>
 
     <div
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
@@ -46,68 +46,78 @@
       <Accordion :accordion="accordion" />
     </div>
 
-    <div class="text-white text-center">Combobox</div>
+    <div class="text-white text-center font-serif text-2xl">Combobox</div>
     <div
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Combobox :data="data" />
     </div>
 
-    <div class="text-white text-center">Dialog</div>
+    <div class="text-white text-center font-serif text-2xl">Dialog</div>
+
     <div
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
-      <Dialog />
+      <Dialog :dialog="dialog" />
     </div>
 
-    <div class="text-white text-center">Alert</div>
+    <div class="text-white text-center font-serif text-2xl">Alert</div>
+
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center flex-col"
+      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
-      <button
-        @click="toggleAlert"
-        class="font-serif hover:bg-green-200 h-9 flex-col flex items-center justify-center rounded-md bg-white p-4 duration-500"
-      >
-        Delete Account
-      </button>
-
-      <!-- Thêm thành phần con vào đây -->
-      <Alert :isOpen="isOpen" @closeAlert="toggleAlert" />
+      <Alert :alert="alert" />
     </div>
 
-    <div class="text-white text-center">Editable</div>
+    <div class="text-white text-center font-serif text-2xl">Editable</div>
     <div
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Editable :list="list1" />
     </div>
 
-    <div class="text-white text-center">Radio Group</div>
+    <div class="text-white text-center font-serif text-2xl">Radio Group</div>
     <div
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Radio :radiogroup="radiogroup" />
     </div>
 
-    <div class="text-white text-center">Hovercard</div>
+    <div class="text-white text-center font-serif text-2xl">Hovercard</div>
     <div
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Hovercard :data="data1" />
     </div>
 
-    <div class="text-white text-center">Tabs</div>
+    <div class="text-white text-center font-serif text-2xl">Tabs</div>
     <div
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Tabs :tabs="tabs" />
     </div>
 
-    <div class="text-white text-center">Tags Input</div>
+    <div class="text-white text-center font-serif text-2xl">Tags Input</div>
     <div
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <TagsInput :fruit="fruit" />
+    </div>
+
+    <div class="text-white text-center font-serif text-2xl">
+      Navigation Menu
+    </div>
+    <div
+      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+    >
+      <NavigationMenu :tabs1="tabs1" />
+    </div>
+
+    <div class="text-white text-center font-serif text-2xl">Number Field</div>
+    <div
+      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+    >
+      <NumberField />
     </div>
   </div>
 </template>
@@ -281,9 +291,73 @@ const fruit = ref([
   { id: 4, name: "Lemon" },
 ]);
 
-const isOpen = ref(false);
-function toggleAlert() {
-  isOpen.value = !isOpen.value;
-  console.log("🚀 ~ toggleAlert ~ isOpen.value:", isOpen.value);
-}
+const alert = [
+  {
+    title: " Are you absolutely sure?",
+    content:
+      "This action cannot be undone. This will permanently delete your account and remove your data from our servers.",
+  },
+];
+
+const dialog = [
+  {
+    title: " Edit profile",
+    content: "Make changes to your profile here. Click save when you're done.",
+  },
+];
+
+const tabs1 = [
+  {
+    title: "Learn",
+    contents: [
+      {
+        content: "Stitches",
+        comments: "CSS-in-JS with best-in-class developer experience.",
+      },
+      {
+        content: "Colors",
+        comments: "Beautiful, thought-out palettes with auto dark mode",
+      },
+      {
+        content: "Icons",
+        comments: "A crisp set of 15x15 icons, balanced and consistent",
+      },
+    ],
+  },
+  {
+    title: "Overview",
+    contents: [
+      {
+        content: "Introduction",
+        comments: "Build high-quality, accessible design systems and web apps.",
+      },
+      {
+        content: "Getting started",
+        comments:
+          "A quick tutorial to get you up and running with Radix Primitives.",
+      },
+      {
+        content: "Styling",
+        comments: "Unstyled and compatible with any styling solution.",
+      },
+    ],
+  },
+  {
+    title: "Overview 2",
+    contents: [
+      {
+        content: "Animation",
+        comments: "Use CSS keyframes or any animation library of your choice.",
+      },
+      {
+        content: "Accessibility",
+        comments: "Tested in a range of browsers and assistive technologies.",
+      },
+      {
+        content: "Releases",
+        comments: "Radix Primitives releases and their changelogs.",
+      },
+    ],
+  },
+];
 </script>

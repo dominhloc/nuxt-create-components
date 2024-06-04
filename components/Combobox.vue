@@ -1,10 +1,10 @@
 <template>
-  <div class="h-72 flex flex-col items-center">
+  <div class="h-36 flex flex-col justify-center items-center">
     <div class="relative">
       <input
         type="text"
-        placeholder="Placeholder..."
-        class="h-9 rounded-md w-60 px-2"
+        placeholder=" Placeholder... "
+        class="h-9 rounded-md w-60 px-2 font-semibold text-sm"
         v-model="searchQuery"
         @focus="showDropdown = true"
         @blur="hideDropdown"
