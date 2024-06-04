@@ -11,7 +11,7 @@
       >
         <div
           @click="toggle(index)"
-          class="accordion-header hover:bg-blue-500 cursor-pointer p-4 bg-blue-400 text-white"
+          class="accordion-header cursor-pointer p-2 text-black hover:bg-slate-300"
         >
           {{ i?.title }}
         </div>
