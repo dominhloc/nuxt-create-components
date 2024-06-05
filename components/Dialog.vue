@@ -81,7 +81,7 @@
     </div>
     <div
       v-if="isSave"
-      class="p-3 border bg-white rounded-lg text-green-900 font-serif"
+      class="p-3 border bg-red-500 rounded-lg text-white font-semibold font-serif"
     >
       Saved Successfully
     </div>
@@ -89,11 +89,9 @@
 </template>
 
 <script setup>
-const props = defineProps({
-  dialog: {
-    type: Array,
-    required: true,
-  },
+const dialog = defineModel("dialog", {
+  type: Array,
+  required: true,
 });
 
 const isOpen = ref(false);

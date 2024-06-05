@@ -15,7 +15,10 @@
         >
           {{ i?.title }}
         </div>
-        <div v-if="isOpen(index)" class="p-3 bg-gray-100 border-2">
+        <div
+          v-if="isOpen(index)"
+          class="p-3 bg-gradient-to-l from-green-600 to-green-400 text-white border-2"
+        >
           {{ i?.content }}
         </div>
       </button>

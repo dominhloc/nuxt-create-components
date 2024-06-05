@@ -26,6 +26,14 @@
     >
       <Scroll :list="list" />
     </div>
+
+    <div class="text-white text-center font-serif text-2xl">Label</div>
+    <div
+      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+    >
+      <Label />
+    </div>
+
     <div class="text-white text-center font-serif text-2xl">Dropdown</div>
     <div
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
@@ -58,7 +66,7 @@
     <div
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
-      <Dialog :dialog="dialog" />
+      <Dialog v-model:dialog="dialog" />
     </div>
 
     <div class="text-white text-center font-serif text-2xl">Alert</div>
@@ -118,6 +126,13 @@
       class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <NumberField />
+    </div>
+
+    <div class="text-white text-center font-serif text-2xl">Separator</div>
+    <div
+      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+    >
+      <Separator />
     </div>
   </div>
 </template>

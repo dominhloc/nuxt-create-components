@@ -1,8 +1,6 @@
 <template>
   <div class="space-y-3">
-    <div
-      class="flex justify-center items-center text-xl font-semibold font-serif"
-    >
+    <div class="flex text-white justify-center items-center text-xl font-serif">
       Age
     </div>
     <div class="flex justify-center items-center space-x-3">

@@ -3,7 +3,7 @@
     <button
       v-if="isButtonVisible"
       @click="toggleAlert"
-      class="bg-white w-44 text-green-800 font-serif p-2 rounded-lg hover:bg-green-200 h-9 flex-col flex items-center justify-center duration-500"
+      class="bg-white w-44 font-serif p-2 rounded-lg hover:bg-green-200 h-9 flex-col flex items-center justify-center duration-500"
     >
       Delete Account
     </button>
@@ -35,7 +35,7 @@
     </div>
     <div
       v-if="isDeleted"
-      class="bg-white p-3 rounded-lg text-green-900 font-serif"
+      class="bg-slate-600 text-white p-3 rounded-lg font-serif"
     >
       Deleted Successfully
     </div>

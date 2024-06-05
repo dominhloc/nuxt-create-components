@@ -13,7 +13,7 @@ function toggleDropdown() {
       <button
         @click="toggleDropdown()"
         type="button"
-        class="flex flex-row justify-end w-36 rounded-md border shadow-sm px-4 py-2 bg-sky-600 text-sm font-medium text-white hover:bg-blue-400"
+        class="flex flex-row justify-end w-36 rounded-md border shadow-sm px-4 py-2 text-sm font-medium text-white hover:bg-green-700"
         aria-expanded="true"
         aria-haspopup="true"
       >
