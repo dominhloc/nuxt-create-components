@@ -25,8 +25,25 @@
             type="checkbox"
             :checked="selectedIndex === index"
             @change.stop="selectItem(index)"
-            class="h-4 w-4"
+            class="hidden peer"
           />
+          <div
+            v-if="selectedIndex === index"
+            class="w-6 h-6 flex justify-center items-center"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="1.2em"
+              height="1.2em"
+              viewBox="0 0 48 48"
+            >
+              <circle cx="24" cy="24" r="21" fill="#2e9027" />
+              <path
+                fill="white"
+                d="M34.6 14.6L21 28.2l-5.6-5.6l-2.8 2.8l8.4 8.4l16.4-16.4z"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
