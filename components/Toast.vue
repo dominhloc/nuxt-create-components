@@ -15,8 +15,8 @@
       <div class="flex flex-col items-center justify-between w-fit">
         <div class="space-y-1.5">
           <div class="font-semibold">Tin Nhắn Mới</div>
-          <div class="text-sm text-slate-600">
-            Nội dung tin nhắn mới 1-2-3-4-5-6-7-8-9
+          <div class="text-sm text-slate-600 ml-2">
+            - Nội dung tin nhắn mới 1-2-3-4-5-6-7-8-9
           </div>
         </div>
       </div>

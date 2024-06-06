@@ -18,7 +18,7 @@
         v-model="newFruit"
         @keyup.enter="addFruit"
         placeholder="Fruits..."
-        class="mt-2 ml-3 w-24 mb-1.5 p-1 rounded-md"
+        class="mt-2 ml-3 w-16 mb-1.5 p-1 rounded-md"
       />
     </div>
   </div>

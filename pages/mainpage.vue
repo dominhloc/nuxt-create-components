@@ -303,7 +303,6 @@ const fruit = ref([
   { id: 1, name: "Apple" },
   { id: 2, name: "Banana" },
   { id: 3, name: "Orange" },
-  { id: 4, name: "Lemon" },
 ]);
 
 const alert = [
@@ -340,7 +339,7 @@ const tabs1 = [
     ],
   },
   {
-    title: "Overview",
+    title: "Overview 1",
     contents: [
       {
         content: "Introduction",
