@@ -1,9 +1,11 @@
 <template>
-  <div class="flex flex-col justify-center items-center space-y-3">
+  <div
+    class="flex flex-col w-96 justify-center items-center space-y-3 p-2 border rounded-md"
+  >
     <div class="flex space-x-2">
       <label
         for="name"
-        class="px-3 h-9 w-36 rounded-md text-white flex justify-end items-center"
+        class="px-3 h-9 w-24 text-white rounded-md flex justify-end items-center"
         >Name</label
       >
       <input
@@ -15,7 +17,7 @@
     <div class="flex space-x-2">
       <label
         for="fullname"
-        class="px-3 h-9 w-36 rounded-md text-white flex justify-end items-center"
+        class="px-3 h-9 w-24 rounded-md text-white flex justify-end items-center"
         >Full Name</label
       >
       <input
@@ -26,7 +28,7 @@
     </div>
     <div class="flex space-x-2">
       <label
-        class="px-3 h-9 w-36 rounded-md text-white flex justify-end items-center"
+        class="px-3 h-9 w-24 rounded-md text-white flex justify-end items-center"
         >Age</label
       >
       <input

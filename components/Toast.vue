@@ -3,7 +3,7 @@
     <div class="p-3 flex justify-center items-center">
       <button
         @click="handleClick"
-        class="p-2 w-56 rounded-md bg-green-600 text-white font-semibold font-mono"
+        class="p-2 w-96 rounded-md border hover:bg-green-600 text-white font-semibold font-mono"
       >
         Hiển Thị Tin Nhắn
       </button>
@@ -12,7 +12,7 @@
       v-if="isShow"
       class="fixed bottom-4 right-4 p-3 rounded shadow-lg border transition duration-300 bg-white text-black"
     >
-      <div class="flex items-center justify-between">
+      <div class="flex flex-col items-center justify-between w-fit">
         <div class="space-y-1.5">
           <div class="font-semibold">Tin Nhắn Mới</div>
           <div class="text-sm text-slate-600">
@@ -34,7 +34,7 @@ const handleClick = () => {
     isShow.value = true;
     timerRef.value = window.setTimeout(() => {
       isShow.value = false;
-    }, 2000);
+    }, 2500);
   }, 300);
 };
 </script>

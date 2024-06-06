@@ -1,11 +1,11 @@
 <template>
   <div class="w-screen flex flex-col justify-center items-center">
-    <div class="border w-2/3 border-gray-300 p-4 rounded-md">
+    <div class="border border-gray-300 p-4 rounded-md">
       <div class="flex flex-col space-y-3">
         <div
           v-for="item in list"
           :key="item.id"
-          class="bg-gray-100 p-2 rounded-md flex space-x-4 font-serif justify-center items-center"
+          class="bg-gray-100 p-2 w-96 rounded-md flex space-x-4 font-serif justify-center items-center"
         >
           <div v-if="!item.done" class="text-slate-900 font-serif">
             {{ item.name }}

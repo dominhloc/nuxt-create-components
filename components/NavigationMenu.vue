@@ -1,12 +1,12 @@
 <template>
   <div class="w-screen flex-col flex justify-center items-center space-y-4">
     <div
-      class="flex justify-center bg-green-700 text-white items-center space-x-4 w-80 rounded-lg"
+      class="flex justify-center bg-green-700 text-white items-center space-x-4 w-96 rounded-lg"
     >
       <button
         v-for="(item, index) in tabs1"
         :key="index"
-        class="hover:bg-slate-200 w-24 h-10 flex justify-center items-center rounded-lg"
+        class="hover:bg-slate-200 w-32 h-10 flex justify-center items-center rounded-lg"
         :class="{
           'bg-white text-blue-500 font-semibold border-green-400 border-2':
             selectedIndex === index,

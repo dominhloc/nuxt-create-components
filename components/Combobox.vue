@@ -4,7 +4,7 @@
       <input
         type="text"
         placeholder=" Placeholder... "
-        class="h-9 rounded-md w-60 px-2 font-semibold text-sm"
+        class="h-9 rounded-md w-96 px-2 font-semibold text-sm"
         v-model="searchQuery"
         @focus="showDropdown = true"
         @blur="hideDropdown"

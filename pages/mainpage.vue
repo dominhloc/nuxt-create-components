@@ -134,24 +134,24 @@
     >
       <Separator />
     </div>
+
+    <div class="text-white text-center font-serif text-2xl">Toggle Group</div>
+    <div
+      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+    >
+      <ToggleGroup />
+    </div>
+
+    <div class="text-white text-center font-serif text-2xl">Toast</div>
+    <div
+      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+    >
+      <Toast />
+    </div>
   </div>
 </template>
 
 <script setup>
-const dropdownData = [
-  { label: "Option 1" },
-  { label: "Option 2" },
-  { label: "Option 3" },
-  { label: "Option 4" },
-  { label: "Option 5" },
-  { label: "Option 6" },
-  { label: "Option 7" },
-  { label: "Option 8" },
-  { label: "Option 9" },
-
-  // Add more options as needed
-];
-
 const list = ref([
   { name: "v1.2.0-beta.1" },
   { name: "v1.2.0-beta.2" },

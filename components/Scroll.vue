@@ -3,7 +3,7 @@
     class="w-screen bg-gradient-to-l from-green-700 to-green-400 flex-col flex justify-center items-center"
   >
     <div
-      class="w-64 h-72 overflow-y-scroll border border-gray-300 p-4 bg-white rounded-md"
+      class="w-96 h-72 overflow-y-scroll border border-gray-300 p-4 bg-white rounded-md"
     >
       <div class="grid grid-cols-1 gap-4">
         <div

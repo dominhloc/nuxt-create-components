@@ -20,7 +20,7 @@
       <input
         id="quantity"
         v-model="quantity"
-        class="border text-center font-semibold rounded p-1 pl-4 pr-4 quantity-input"
+        class="border w-96 text-center font-semibold rounded p-1 pl-4 pr-4 quantity-input"
         @input="validateQuantity"
       />
       <button
