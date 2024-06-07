@@ -1,17 +1,19 @@
 <script setup>
-const isOpen = ref(false);
+import { ref } from "vue";
 
-function toggleDropdown() {
-  this.isOpen = !this.isOpen;
-  console.log("🚀 ~ toggleDropdown ~ this.isOpen:", this.isOpen);
-}
+const isOpen1 = ref(false);
+
+const toggleDropdown = () => {
+  isOpen1.value = !isOpen1.value;
+  console.log("🚀 ~ toggleDropdown ~ isOpen1:", isOpen1.value);
+};
 </script>
 
 <template>
   <div class="h-36 flex flex-col justify-center items-center">
     <div>
       <button
-        @click="toggleDropdown()"
+        @click="toggleDropdown"
         type="button"
         class="flex flex-row justify-end w-36 rounded-md border shadow-sm px-4 py-2 text-sm font-medium text-white hover:bg-green-700"
         aria-expanded="true"
@@ -35,7 +37,7 @@ function toggleDropdown() {
     </div>
     <div class="flex mt-4 mr-56">
       <div
-        v-if="isOpen"
+        v-if="isOpen1"
         class="absolute w-56 shadow-lg rounded-md border bg-white flex-col flex space-y-2"
       >
         <!-- edit -->
