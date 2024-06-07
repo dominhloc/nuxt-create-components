@@ -49,7 +49,7 @@
 <script setup>
 const currentPage = ref(1);
 const totalItems = ref(100); // Tổng số mục
-const itemsPerPage = ref(10); // Số mục trên mỗi trang
+const itemsPerPage = ref(12); // Số mục trên mỗi trang
 
 const totalPages = computed(() =>
   Math.ceil(totalItems.value / itemsPerPage.value)
