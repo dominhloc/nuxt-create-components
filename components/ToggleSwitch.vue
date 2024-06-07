@@ -15,7 +15,7 @@
       </div>
     </label>
     <div class="">
-      <div class=" text-gray-700 text-3xl font-medium">
+      <div class="text-gray-700 text-3xl font-medium">
         {{ isChecked ? `ON` : "OFF" }}
       </div>
     </div>

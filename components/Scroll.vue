@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex-col flex justify-center items-center"
-  >
+  <div class="flex-col flex justify-center items-center">
     <div
       class="w-96 h-72 overflow-y-scroll border border-gray-300 p-4 bg-white rounded-md"
     >

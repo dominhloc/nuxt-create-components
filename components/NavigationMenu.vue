@@ -8,7 +8,7 @@
         :key="index"
         class="hover:bg-slate-200 w-32 h-10 flex justify-center items-center rounded-lg"
         :class="{
-          'bg-white text-blue-500 font-semibold border-green-400 border-2':
+          'bg-white text-blue-500 font-semibold border':
             selectedIndex === index,
         }"
         @mouseenter="selectTab(index)"

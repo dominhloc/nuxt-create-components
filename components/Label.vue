@@ -43,6 +43,5 @@
 <script setup>
 const name = ref("Minh Lộc");
 const fullname = ref("Đỗ Minh Lộc");
-
 const age = ref(24);
 </script>

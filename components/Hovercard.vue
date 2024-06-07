@@ -20,7 +20,7 @@
     </button>
     <div
       v-if="hoveredIndex !== null"
-      class="mt-2 p-3 w-3/5 bg-white rounded-lg transition duration-500 space-y-3 ease-in-out"
+      class="mt-2 p-3 w-96 bg-white rounded-lg transition duration-500 space-y-3 ease-in-out"
     >
       <h1
         class="rounded-full w-20 h-20 flex justify-center items-center ease-in-out duration-500 bg-black"
