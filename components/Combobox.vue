@@ -4,7 +4,7 @@
       <input
         type="text"
         placeholder=" Placeholder... "
-        class="h-9 rounded-md w-96 px-2 font-semibold text-sm"
+        class="h-10 rounded-md w-96 px-2 font-semibold text-sm"
         v-model="searchQuery"
         @focus="showDropdown = true"
         @blur="hideDropdown"
@@ -12,7 +12,7 @@
       />
       <div
         v-if="showDropdown"
-        class="absolute bg-white border mt-1 w-full font-semibold rounded-md"
+        class="absolute bg-white border w-full font-semibold rounded-md"
       >
         <div
           v-for="(option, index) in filteredOptions"

@@ -1,150 +1,156 @@
 <template>
-  <div
-    class="flex flex-col justify-center space-y-5 p-6 min-h-screen bg-gradient-to-l from-gray-900 to-gray-900"
-  >
-    <div class="text-white font-serif text-2xl text-center">Toggle Switch</div>
+  <div class="flex flex-col justify-center space-y-5 p-6 min-h-screen bg-white">
+    <div class="text-slate-900 font-serif text-2xl text-center">
+      Toggle Switch
+    </div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 h-32 flex justify-center items-center"
+      class="bg-gradient-to-l from-red-700 to-red-300 shadow-md rounded-lg p-6 h-32 flex justify-center items-center"
     >
       <ToggleSwitch />
     </div>
-    <div class="text-white text-center font-serif text-2xl">Slider</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Slider</div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-slate-600 to-slate-300 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Slider />
     </div>
-    <div class="text-white text-center font-serif text-2xl">Calendar</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Calendar</div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-orange-600 to-orange-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Calendar />
     </div>
-    <div class="text-white text-center font-serif text-2xl">Scroll</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Scroll</div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-blue-700 to-blue-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Scroll :list="list" />
     </div>
 
-    <div class="text-white text-center font-serif text-2xl">Label</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Label</div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-emerald-700 to-emerald-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Label />
     </div>
 
-    <div class="text-white text-center font-serif text-2xl">Dropdown</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Dropdown</div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-slate-700 to-slate-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Dropdown />
     </div>
-    <div class="text-white text-center font-serif text-2xl">Pagination</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Pagination</div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-emerald-700 to-emerald-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Pagination />
     </div>
-    <div class="text-white text-center font-serif text-2xl">Accordion</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Accordion</div>
 
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-red-700 to-red-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Accordion :accordion="accordion" />
     </div>
 
-    <div class="text-white text-center font-serif text-2xl">Combobox</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Combobox</div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-stone-700 to-stone-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Combobox :data="data" />
     </div>
 
-    <div class="text-white text-center font-serif text-2xl">Dialog</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Dialog</div>
 
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-sky-700 to-sky-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Dialog v-model:dialog="dialog" />
     </div>
 
-    <div class="text-white text-center font-serif text-2xl">Alert</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Alert</div>
 
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-lime-700 to-lime-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Alert :alert="alert" />
     </div>
 
-    <div class="text-white text-center font-serif text-2xl">Editable</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Editable</div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-teal-700 to-teal-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Editable :list="list1" />
     </div>
 
-    <div class="text-white text-center font-serif text-2xl">Radio Group</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">
+      Radio Group
+    </div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-yellow-700 to-yellow-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Radio :radiogroup="radiogroup" />
     </div>
 
-    <div class="text-white text-center font-serif text-2xl">Hovercard</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Hovercard</div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-cyan-700 to-cyan-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Hovercard :data="data1" />
     </div>
 
-    <div class="text-white text-center font-serif text-2xl">Tabs</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Tabs</div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-emerald-700 to-emerald-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Tabs :tabs="tabs" />
     </div>
 
-    <div class="text-white text-center font-serif text-2xl">Tags Input</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Tags Input</div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-pink-700 to-pink-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <TagsInput :fruit="fruit" />
     </div>
 
-    <div class="text-white text-center font-serif text-2xl">
+    <div class="text-slate-900 text-center font-serif text-2xl">
       Navigation Menu
     </div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-blue-700 to-blue-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <NavigationMenu :tabs1="tabs1" />
     </div>
 
-    <div class="text-white text-center font-serif text-2xl">Number Field</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">
+      Number Field
+    </div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-red-700 to-red-300 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <NumberField />
     </div>
 
-    <div class="text-white text-center font-serif text-2xl">Separator</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Separator</div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-slate-700 to-slate-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Separator />
     </div>
 
-    <div class="text-white text-center font-serif text-2xl">Toggle Group</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">
+      Toggle Group
+    </div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-orange-700 to-orange-400 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <ToggleGroup />
     </div>
 
-    <div class="text-white text-center font-serif text-2xl">Toast</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Toast</div>
     <div
-      class="bg-gradient-to-l from-green-700 to-green-400 shadow-md rounded-lg p-6 flex justify-center items-center"
+      class="bg-gradient-to-l from-neutral-700 to-lime-600 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
       <Toast />
     </div>

@@ -6,10 +6,9 @@
       <button
         v-for="(tab, index) in tabs"
         :key="index"
-        class="hover:bg-blue-200 w-24 h-10 rounded-lg"
+        class="hover:bg-green-600 w-24 h-10 rounded-lg"
         :class="{
-          'bg-white text-blue-500 font-semibold border-green-400 border-2':
-            selectedIndex === index,
+          'bg-white text-black font-semibold': selectedIndex === index,
         }"
         @click="selectTab(index)"
       >
@@ -20,7 +19,7 @@
       <button
         v-for="(content, index) in tabs[selectedIndex].contents"
         :key="index"
-        class="space-y-1.5 w-full hover:bg-sky-100 rounded-xl h-22 p-2 text-left"
+        class="space-y-1.5 w-full hover:bg-slate-200 rounded-xl h-22 p-2 text-left"
       >
         <p class="font-semibold">{{ content.content }}</p>
         <p class="text-xs text-slate-500">{{ content.comments }}</p>

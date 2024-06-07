@@ -15,7 +15,7 @@ const toggleDropdown = () => {
       <button
         @click="toggleDropdown"
         type="button"
-        class="flex flex-row justify-end w-36 rounded-md border shadow-sm px-4 py-2 text-sm font-medium text-white hover:bg-green-700"
+        class="flex flex-row justify-end w-36 rounded-md border shadow-sm px-4 py-2 text-sm font-medium text-white hover:bg-slate-700"
         aria-expanded="true"
         aria-haspopup="true"
       >
@@ -42,7 +42,7 @@ const toggleDropdown = () => {
       >
         <!-- edit -->
         <button
-          class="hover:bg-blue-400 h-8 rounded-md pl-2 flex justify-start items-center"
+          class="hover:bg-slate-300 h-8 rounded-md pl-2 flex justify-start items-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +61,7 @@ const toggleDropdown = () => {
 
         <!-- duplicate -->
         <button
-          class="hover:bg-blue-400 h-8 rounded-md pl-2 flex justify-start items-center"
+          class="hover:bg-slate-300 h-8 rounded-md pl-2 flex justify-start items-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ const toggleDropdown = () => {
 
         <!-- archive -->
         <button
-          class="hover:bg-blue-400 h-8 rounded-md pl-2 flex justify-start items-center"
+          class="hover:bg-slate-300 h-8 rounded-md pl-2 flex justify-start items-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +102,7 @@ const toggleDropdown = () => {
         </button>
         <!-- Move -->
         <button
-          class="hover:bg-blue-400 h-8 rounded-md pl-2 flex justify-start items-center"
+          class="hover:bg-slate-300 h-8 rounded-md pl-2 flex justify-start items-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +119,7 @@ const toggleDropdown = () => {
         </button>
         <!-- Delete -->
         <button
-          class="hover:bg-blue-400 h-8 rounded-md pl-2 flex justify-start items-center"
+          class="hover:bg-slate-300 h-8 rounded-md pl-2 flex justify-start items-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

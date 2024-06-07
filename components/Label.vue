@@ -11,7 +11,7 @@
       <input
         type="text"
         v-model="name"
-        class="h-9 rounded-md flex-auto px-3 border text-white bg-gradient-to-l from-green-700 to-green-400"
+        class="h-9 rounded-md flex-auto px-3 border text-white bg-gradient-to-l from-emerald-700 to-emerald-400"
       />
     </div>
     <div class="flex space-x-2">
@@ -23,7 +23,7 @@
       <input
         type="text"
         v-model="fullname"
-        class="h-9 rounded-md flex-auto px-3 border text-white bg-gradient-to-l from-green-700 to-green-400"
+        class="h-9 rounded-md flex-auto px-3 border text-white bg-gradient-to-l from-emerald-700 to-emerald-400"
       />
     </div>
     <div class="flex space-x-2">
@@ -34,7 +34,7 @@
       <input
         type="number"
         v-model="age"
-        class="h-9 rounded-md flex-auto px-3 border text-white bg-gradient-to-l from-green-700 to-green-400"
+        class="h-9 rounded-md flex-auto px-3 border text-white bg-gradient-to-l from-emerald-700 to-emerald-400"
       />
     </div>
   </div>

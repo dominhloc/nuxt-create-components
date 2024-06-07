@@ -5,7 +5,7 @@
       v-for="(item, index) in radiogroup"
       :key="index"
       :class="{
-        'bg-blue-300': selectedIndex === index,
+        'bg-blue-400': selectedIndex === index,
       }"
       @click="selectItem(index)"
     >
@@ -14,7 +14,7 @@
           <div class="text-sm font-bold font-serif">
             {{ item?.title }}
           </div>
-          <div class="ml-2 mt-1 items-center text-gray-500 text-sm font-serif">
+          <div class="ml-2 mt-1 items-center text-gray-800 text-sm font-serif">
             {{ item?.content }}
             <div class="flex-auto flex justify-end items-center"></div>
           </div>

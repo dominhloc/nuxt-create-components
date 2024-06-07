@@ -1,7 +1,7 @@
 <template>
   <div class="w-screen flex-col flex justify-center items-center space-y-4">
     <div
-      class="flex justify-center bg-green-700 text-white items-center space-x-4 w-96 rounded-lg"
+      class="flex justify-center bg-blue-700 text-white items-center space-x-4 w-96 rounded-lg"
     >
       <button
         v-for="(item, index) in tabs1"

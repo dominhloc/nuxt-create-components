@@ -1,8 +1,8 @@
 <!-- Đây là con -->
 
 <template>
-  <div class="flex justify-center items-center">
-    <div class="space-y-3 font-serif text-lg text-center">
+  <div class="flex flex-col justify-center items-center">
+    <div class="space-y-3 font-serif text-lg text-center flex flex-col">
       <button
         @click="toggleDropdown()"
         v-for="(i, index) in accordion"
@@ -11,7 +11,7 @@
       >
         <div
           @click="toggle(index)"
-          class="accordion-header cursor-pointer p-2 text-black hover:bg-blue-100"
+          class="accordion-header cursor-pointer p-2 text-white hover:bg-red-800 rounded-md"
         >
           {{ i?.title }}
         </div>

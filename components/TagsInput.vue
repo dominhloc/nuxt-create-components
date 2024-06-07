@@ -4,7 +4,7 @@
       <div
         v-for="item in fruit"
         :key="item.id"
-        class="flex justify-center items-center space-x-1 bg-green-500 p-1 rounded-md text-white h-fit w-fit ml-3 mt-1.5 mb-1.5"
+        class="flex justify-center items-center space-x-1 bg-pink-600 p-1 rounded-md text-white h-fit w-fit ml-3 mt-1.5 mb-1.5"
       >
         <span>{{ item.name }}</span>
         <button

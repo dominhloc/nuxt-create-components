@@ -5,7 +5,7 @@
       <button
         @click="isItalic = !isItalic"
         :class="{
-          'bg-green-800': isItalic,
+          'bg-white': isItalic,
         }"
         class="p-2 rounded border"
       >
@@ -30,7 +30,7 @@
       <button
         @click="isBold = !isBold"
         :class="{
-          'bg-green-800': isBold,
+          'bg-white': isBold,
         }"
         class="p-2 rounded border"
       >
@@ -51,7 +51,7 @@
       <button
         @click="isUnderline = !isUnderline"
         :class="{
-          'bg-green-800': isUnderline,
+          'bg-white': isUnderline,
         }"
         class="p-2 rounded border"
       >
