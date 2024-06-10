@@ -11,7 +11,7 @@
       <div
         v-for="(item, index) in dialog"
         :key="index"
-        class="bg-white p-6 w-96 rounded-md space-y-5"
+        class="bg-white p-5 w-96 rounded-md space-y-2"
       >
         <div class="flex flex-row items-center">
           <div class="text-2xl font-semibold flex-1">
@@ -39,10 +39,10 @@
           </div>
         </div>
         <div class="text-gray-600">{{ item?.content }}</div>
-        <div class="flex flex-row items-center justify-center space-x-5">
+        <div class="flex flex-row items-center justify-center">
           <label
             for="name"
-            class="px-3 h-9 w-20 rounded-md text-center flex justify-center items-center border"
+            class="px-3 h-9 w-20 rounded-md flex justify-end items-center text-red-600"
             >Name</label
           >
           <input
@@ -52,10 +52,10 @@
             class="h-9 rounded-md flex-auto px-3 border"
           />
         </div>
-        <div class="flex flex-row items-center justify-center space-x-5">
+        <div class="flex flex-row items-center justify-center">
           <label
             for="username"
-            class="px-3 h-9 w-20 rounded-md text-center flex justify-center items-center border"
+            class="px-3 h-9 w-20 rounded-md flex justify-end items-center text-red-600"
             >Username</label
           >
           <input

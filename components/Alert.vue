@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center items-center space-y-5">
+  <div class="flex flex-col justify-center items-center">
     <button
       v-if="isButtonVisible"
       @click="toggleAlert"
@@ -11,11 +11,11 @@
       v-if="isOpen"
       class="flex justify-center items-center bg-white p-4 h-fit w-96 rounded-lg"
     >
-      <div v-for="(item, index) in alert" :key="index" class="space-y-5">
+      <div v-for="(item, index) in alert" :key="index" class="space-y-2">
         <div class="text-xl font-semibold">{{ item?.title }}</div>
         <div class="text-sm text-gray-600">{{ item?.content }}</div>
-        <div class="space-y-3">
-          <form @submit.prevent="saveChanges" class="flex flex-row space-x-4">
+        <div>
+          <form @submit.prevent="saveChanges" class="flex flex-row space-x-5">
             <button
               @click="handleAction()"
               class="flex-1 h-9 rounded-md bg-red-200 text-red-700 px-5 font-serif border hover:bg-red-300 duration-300"
