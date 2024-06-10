@@ -175,7 +175,7 @@
       />
     </div>
 
-    <div class="text-slate-900 text-center font-serif text-2xl">PinInput</div>
+    <div class="text-slate-900 text-center font-serif text-2xl">Pin Input</div>
     <div
       class="bg-gradient-to-l from-neutral-700 to-orange-300 shadow-md rounded-lg p-6 flex justify-center items-center"
     >
