@@ -1,6 +1,8 @@
 <template>
-  <div class=" flex flex-col justify-center items-center">
-    <div class="container w-fit h-96 bg-slate-50 p-6 space-y-10 rounded-md">
+  <div class="flex flex-col justify-center items-center">
+    <div
+      class="container w-fit h-96 bg-slate-50 p-6 space-y-0 rounded-md overflow-y-auto"
+    >
       <div class="flex justify-between items-center mb-4">
         <button
           class="border border-black h-7 w-7 shadow-lg p-1 rounded-md font-semibold flex justify-center items-center duration-300 hover:bg-slate-400"
@@ -18,28 +20,34 @@
           &gt;
         </button>
       </div>
-      <div class="grid grid-cols-7 gap-4 p-1 border rounded-md">
-        <div
-          v-for="(day, index) in weekDays"
-          :key="index"
-          class="text-center text-green-600 rounded-md w-14 border"
-        >
-          {{ day }}
-        </div>
-        <div
-          v-for="(date, index) in calendarDates"
-          :key="index"
-          class="text-center rounded-md"
-          @click="selectDate(date)"
-          :class="{
-            'bg-blue-500 font-bold hover:bg-blue-600 text-white':
-              date.isToday || date.isSelected,
-            'font-normal text-decoration: underline':
-              date.isSelected && !date.disabled,
-            'cursor-pointer border': !date.disabled,
-          }"
-        >
-          {{ date.day }}
+      <div class="flex justify-center font-serif">
+        {{ selectedDate }} {{ currentMonth }} {{}}
+      </div>
+
+      <div class="">
+        <div class="grid grid-cols-7 gap-4 p-1 border rounded-md">
+          <div
+            v-for="(day, index) in weekDays"
+            :key="index"
+            class="text-center text-green-600 rounded-md w-14 border"
+          >
+            {{ day }}
+          </div>
+          <div
+            v-for="(date, index) in calendarDates"
+            :key="index"
+            class="text-center rounded-md"
+            @click="selectDate(date)"
+            :class="{
+              'bg-blue-500 font-bold hover:bg-blue-600 text-white':
+                date.isToday || date.isSelected,
+              'font-normal text-decoration: underline':
+                date.isSelected && !date.disabled,
+              'cursor-pointer border': !date.disabled,
+            }"
+          >
+            {{ date.day }}
+          </div>
         </div>
       </div>
     </div>

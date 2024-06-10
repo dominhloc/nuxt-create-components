@@ -154,9 +154,10 @@
     >
       <Toast />
     </div>
+
     <div class="text-slate-900 text-center font-serif text-2xl">Avatar</div>
     <div
-      class="bg-gradient-to-l from-neutral-700 to-lime-600 shadow-md rounded-lg p-6 flex justify-center items-center space-x-10 mt-4"
+      class="bg-gradient-to-l from-pink-700 to-pink-400 shadow-md rounded-lg p-6 flex justify-center items-center space-x-10 mt-4"
     >
       <Avatar
         src="https://vntime.org/wp-content/uploads/2020/04/100-%E1%BA%A2nh-n%E1%BB%81n-m%C3%A1y-t%C3%ADnh-%C4%91%E1%BA%B9p-nh%E1%BA%A5t-c%C3%B3-link-t%E1%BA%A3i-v%E1%BB%81-tr%E1%BB%B1c-ti%E1%BA%BFp.jpeg"
@@ -172,6 +173,13 @@
         src="https://www.galaxycine.vn/media/2019/3/20/mv5bmti5ody5ntuzmf5bml5banbnxkftztcwotazntizmw--v1-sy1000-cr0-0-1420-1000-al-_1553074176319.jpg"
         alt="User Avatar"
       />
+    </div>
+
+    <div class="text-slate-900 text-center font-serif text-2xl">PinInput</div>
+    <div
+      class="bg-gradient-to-l from-neutral-700 to-orange-300 shadow-md rounded-lg p-6 flex justify-center items-center"
+    >
+      <PinInput />
     </div>
   </div>
 </template>
